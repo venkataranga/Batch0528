@@ -11,11 +11,11 @@ public class Car {
 				+ type1 + ", list=" + list + "]";
 	}
 
-	static String make;
-	String _model;
-	protected String $color;
-	String type1;
-	List<String> list;
+	public static String make;
+	public String _model;
+	public String $color;
+	public String type1;
+	public List<String> list;
 	
 	public void moveForward(){
 		System.out.println(this.$color+" Color "+this._model+ " Car is moving forward");

@@ -1,9 +1,15 @@
-package com.training.classes;
+package com.training.Arrays;
+
+import com.training.classes.Car;
 
 public class Arrays {
+	
+	static double[] intArray;
 
 	public static void main(String[] args) {
 
+		
+		
 		int[] integerArray;
 		integerArray = new int[5];
 		integerArray[0] = 0;
@@ -34,6 +40,10 @@ public class Arrays {
 		
 		int[] i = {1,2,3,4,5,6};
 		System.out.println(i[4]);
+		
+		System.out.println(intArray);
+		
+		
 	}
 
 }
