@@ -17,6 +17,7 @@ public class StandaloneClass {
 			
 			
 		}
+		
 		Navigatable n = new ExampleClassImplementingInterfaceThatExtendsAnotherInterface();
 		TechnologyPackage t = new ExampleClassImplementingInterfaceThatExtendsAnotherInterface();
 		InterfaceExtendingExample i = new ExampleClassImplementingInterfaceThatExtendsAnotherInterface();
@@ -25,12 +26,17 @@ public class StandaloneClass {
 		c2.moveReverse();
 		//Long l = new Long(12);
 		takePrimitvies(new Long(12));
-		
+		getType(a4);
+		getType(c1);
 		
 	}
 	
-	public void getType(Object o){
+	public static void getType(Object o){
+		System.out.println("______________________________");
+		if(o instanceof A4)
+			((A4)o).getPOI(1L, 1);
 		System.out.println(o.getClass().getName());
+		System.out.println("______________________________");
 	}
 	
 	public static void takePrimitvies(long p){
